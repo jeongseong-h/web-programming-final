@@ -4,7 +4,7 @@ Final project for Web Programming course (Spring 2026)
 
 1. 프로젝트 소개
 
-HTML, CSS, JavaScript를 활용하여 제작한 자기소개 홈페이지입니다.
+ HTML, CSS, JavaScript를 활용하여 제작한 자기소개 홈페이지입니다.
 
 2. 사용 기술
 
@@ -29,6 +29,3 @@ HTML, CSS, JavaScript를 활용하여 제작한 자기소개 홈페이지입니�
 - 좋아하는 음식 소개
 - MBTI 유형으로 사용자와의 궁합 확인
 
-5. 개발자
-
-정성희
