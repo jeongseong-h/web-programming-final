@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <title>나의 자기소개 홈페이지</title>
+        <style>
+            body{
+                background-color:rgb(82, 141, 82);
+                text-align: center; 
+            }
+            h1{
+            
+                background-color:antiquewhite;
+                padding:30px;
+            }
+            </style>
+    </head>
+    <body>
+        <h1>나의 자기소개 홈페이지</h1>
+        <script>
+            var name = prompt("이름을 입력하세요.");
+
+            if (name === null || name === "") {
+                name = "방문자";
+            }
+            
+            var today = new Date();
+            var year = today.getFullYear();
+            var month = today.getMonth()+1;
+            var day = today.getDate();
+            var hour = today.getHours();
+            var minute = today.getMinutes();
+            var second = today.getSeconds();
+
+
+            document.write("<h2>"+name+"님 반갑습니다!"+"</h2>");
+            document.write("오늘은 "+year+"년 "+month +"월 "+day +"일 입니다."+"<br>");
+            document.write("현재 시각은 "+hour+"시 "+minute+"분 "+second+"초 입니다.");
+            
+        </script>
+        <hr>
+        <a href="profile.html" target="_blank">간단한 자기소개</a><br>
+        <a href="timetable.html" target="_blank">이번학기 시간표</a><br>
+        <a href="food.html" target="_blank">좋아하는 음식</a><br>
+        <a href="mbti.html" target="_blank">우리의 궁합은?</a><br>
+    </body>
+ </html>       
+

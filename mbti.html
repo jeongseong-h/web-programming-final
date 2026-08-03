@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MBTI 궁합</title>
+
+    <style>
+        body {
+            background-color: rgb(82, 141, 82);
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            background-color: antiquewhite;
+            padding: 20px;
+        }
+
+        .result {
+            width: 700px;
+            margin: 40px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .result h2 {
+            color: rgb(82, 141, 82);
+            margin-bottom: 20px;
+        }
+
+        .result p {
+            line-height: 1.8;
+            font-size: 17px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>우리의 MBTI 궁합은?</h1>
+
+    <script>
+
+        let mbti = prompt("MBTI를 입력해주세요. (예: istj)");
+
+        if (mbti !== null) {
+            mbti = mbti.toLowerCase();
+        } else {
+            mbti = "";
+        }
+
+        document.write("<div class='result'>");
+
+        switch (mbti) {
+
+            case "istj":
+            case "isfj":
+            case "estj":
+            case "esfj":
+
+                document.write("<h2>비슷한 유형</h2>");
+                document.write("<p><strong>입력한 MBTI :</strong> " + mbti.toUpperCase() + "</p>");
+                document.write("<p>책임감이 강하고 현실적인 사고방식을 가진 유형입니다. 서로를 이해하기 쉽고 공통 관심사가 많아 안정적이고 편안한 관계를 형성할 수 있습니다.</p>");
+                break;
+
+            case "esfp":
+            case "estp":
+            case "infj":
+            case "enfj":
+
+                document.write("<h2>잘 맞는 유형</h2>");
+                document.write("<p><strong>입력한 MBTI :</strong> " + mbti.toUpperCase() + "</p>");
+                document.write("<p>서로의 장점을 인정하며 원활한 의사소통이 가능한 유형입니다. 함께 있을 때 긍정적인 에너지를 주고받으며 좋은 친구나 동료가 될 가능성이 높습니다.</p>");
+                break;
+
+            case "intj":
+            case "istp":
+            case "isfp":
+            case "intp":
+
+                document.write("<h2>보완 관계 유형</h2>");
+                document.write("<p><strong>입력한 MBTI :</strong> " + mbti.toUpperCase() + "</p>");
+                document.write("<p>생각하는 방식에는 차이가 있지만 서로의 부족한 부분을 채워줄 수 있는 유형입니다. 이해와 존중을 바탕으로 큰 시너지를 기대할 수 있습니다.</p>");
+                break;
+
+            case "enfp":
+            case "entp":
+            case "infp":
+            case "entj":
+
+                document.write("<h2>정반대 성향 유형</h2>");
+                document.write("<p><strong>입력한 MBTI :</strong> " + mbti.toUpperCase() + "</p>");
+                document.write("<p>성향 차이가 큰 유형이지만 서로에게 새로운 관점과 경험을 제공할 수 있습니다. 충분한 배려와 소통이 있다면 좋은 관계를 유지할 수 있습니다.</p>");
+                break;
+
+            default:
+
+                document.write("<h2>입력 오류</h2>");
+                document.write("<p>MBTI를 정확하게 입력해주세요.</p>");
+                document.write("<p>예시 : <strong>istj</strong></p>");
+
+        }
+
+        document.write("</div>");
+
+    </script>
+
+</body>
+
+</html>
